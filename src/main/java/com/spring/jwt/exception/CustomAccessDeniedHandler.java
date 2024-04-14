@@ -13,8 +13,8 @@ import java.io.IOException;
 
 public class CustomAccessDeniedHandler implements AccessDeniedHandler {
     @Override
-    public void handle(HttpServletRequest request, HttpServletResponse response,
-            AccessDeniedException accessDeniedException) throws IOException, ServletException {
+    public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
+
         BaseResponseDTO responseDTO = new BaseResponseDTO();
         responseDTO.setMessage("You don't have permission to access this resource");
         responseDTO.setCode(String.valueOf(HttpStatus.FORBIDDEN.value()));
@@ -25,5 +25,6 @@ public class CustomAccessDeniedHandler implements AccessDeniedHandler {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         response.getWriter().write(json);
+        
     }
 }

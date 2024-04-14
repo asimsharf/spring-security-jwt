@@ -2,7 +2,6 @@ package com.spring.jwt.config.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.jwt.dto.LoginRequest;
-import com.spring.jwt.exception.BaseException;
 import com.spring.jwt.jwt.JwtConfig;
 import com.spring.jwt.jwt.JwtService;
 import com.spring.jwt.service.security.UserDetailsCustom;
@@ -22,7 +21,6 @@ import org.springframework.security.web.authentication.AbstractAuthenticationPro
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import java.io.IOException;
-import java.util.Collection;
 import java.util.Collections;
 
 @Slf4j
