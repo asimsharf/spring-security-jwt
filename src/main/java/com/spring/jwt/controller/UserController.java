@@ -11,6 +11,11 @@ import java.security.Principal;
 @RequestMapping("/user")
 public class UserController {
 
+    @GetMapping("")
+    public ResponseEntity<String> home() {
+        return ResponseEntity.ok("Welcome to my page!");
+    }
+
     @GetMapping("/index")
     public ResponseEntity<String> index(Principal principal) {
         return ResponseEntity.ok("Welcome to user page : " + principal.getName());

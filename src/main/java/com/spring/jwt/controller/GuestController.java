@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/guest")
 public class GuestController {
 
+    @GetMapping("")
+    public ResponseEntity<String> home() {
+        return ResponseEntity.ok("Welcome to my page!");
+    }
+
     @GetMapping("/index")
     public ResponseEntity<String> index(){
         return ResponseEntity.ok("Welcome to my page!");

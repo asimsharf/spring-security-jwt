@@ -1,0 +1,73 @@
+2024-04-14 20:50:06.746 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:06.748 [INFO]  jwt_spring_security [http-nio-4000-exec-5] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:06.748 [INFO]  jwt_spring_security [http-nio-4000-exec-5] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:06.749 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:06.750 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:13.465 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:13.466 [INFO]  jwt_spring_security [http-nio-4000-exec-6] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:13.466 [INFO]  jwt_spring_security [http-nio-4000-exec-6] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:13.466 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:13.467 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:13.770 [DEBUG]  jwt_spring_security [http-nio-4000-exec-7] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:13.771 [INFO]  jwt_spring_security [http-nio-4000-exec-7] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:13.771 [INFO]  jwt_spring_security [http-nio-4000-exec-7] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:13.771 [DEBUG]  jwt_spring_security [http-nio-4000-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:13.772 [DEBUG]  jwt_spring_security [http-nio-4000-exec-7] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:13.973 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:13.973 [INFO]  jwt_spring_security [http-nio-4000-exec-8] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:13.973 [INFO]  jwt_spring_security [http-nio-4000-exec-8] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:13.973 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:13.974 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.139 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.139 [INFO]  jwt_spring_security [http-nio-4000-exec-9] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.139 [INFO]  jwt_spring_security [http-nio-4000-exec-9] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.139 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.139 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.307 [DEBUG]  jwt_spring_security [http-nio-4000-exec-10] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.307 [INFO]  jwt_spring_security [http-nio-4000-exec-10] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.307 [INFO]  jwt_spring_security [http-nio-4000-exec-10] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.307 [DEBUG]  jwt_spring_security [http-nio-4000-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.307 [DEBUG]  jwt_spring_security [http-nio-4000-exec-10] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.476 [DEBUG]  jwt_spring_security [http-nio-4000-exec-1] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.476 [INFO]  jwt_spring_security [http-nio-4000-exec-1] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.476 [INFO]  jwt_spring_security [http-nio-4000-exec-1] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.476 [DEBUG]  jwt_spring_security [http-nio-4000-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.477 [DEBUG]  jwt_spring_security [http-nio-4000-exec-1] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.619 [DEBUG]  jwt_spring_security [http-nio-4000-exec-2] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.619 [INFO]  jwt_spring_security [http-nio-4000-exec-2] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.619 [INFO]  jwt_spring_security [http-nio-4000-exec-2] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.619 [DEBUG]  jwt_spring_security [http-nio-4000-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.619 [DEBUG]  jwt_spring_security [http-nio-4000-exec-2] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.787 [DEBUG]  jwt_spring_security [http-nio-4000-exec-3] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.787 [INFO]  jwt_spring_security [http-nio-4000-exec-3] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.787 [INFO]  jwt_spring_security [http-nio-4000-exec-3] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.788 [DEBUG]  jwt_spring_security [http-nio-4000-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.788 [DEBUG]  jwt_spring_security [http-nio-4000-exec-3] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:14.948 [DEBUG]  jwt_spring_security [http-nio-4000-exec-4] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:14.948 [INFO]  jwt_spring_security [http-nio-4000-exec-4] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:14.948 [INFO]  jwt_spring_security [http-nio-4000-exec-4] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:14.948 [DEBUG]  jwt_spring_security [http-nio-4000-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:14.948 [DEBUG]  jwt_spring_security [http-nio-4000-exec-4] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:15.082 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:15.082 [INFO]  jwt_spring_security [http-nio-4000-exec-5] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:15.082 [INFO]  jwt_spring_security [http-nio-4000-exec-5] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:15.082 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:15.083 [DEBUG]  jwt_spring_security [http-nio-4000-exec-5] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:15.284 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.security.web.FilterChainProxy                  - Securing GET /guest
+2024-04-14 20:50:15.285 [INFO]  jwt_spring_security [http-nio-4000-exec-6] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /guest
+2024-04-14 20:50:15.285 [INFO]  jwt_spring_security [http-nio-4000-exec-6] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /guest
+2024-04-14 20:50:15.285 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:15.285 [DEBUG]  jwt_spring_security [http-nio-4000-exec-6] o.s.security.web.FilterChainProxy                  - Secured GET /guest
+2024-04-14 20:50:32.554 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.security.web.FilterChainProxy                  - Securing GET /user
+2024-04-14 20:50:32.556 [INFO]  jwt_spring_security [http-nio-4000-exec-8] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /user
+2024-04-14 20:50:32.557 [INFO]  jwt_spring_security [http-nio-4000-exec-8] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /user
+2024-04-14 20:50:32.557 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:50:32.561 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.security.web.FilterChainProxy                  - Securing GET /error
+2024-04-14 20:50:32.564 [DEBUG]  jwt_spring_security [http-nio-4000-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:51:15.104 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.security.web.FilterChainProxy                  - Securing GET /account
+2024-04-14 20:51:15.105 [INFO]  jwt_spring_security [http-nio-4000-exec-9] c.s.j.c.f.JwtTokenAuthenticationFilter             - Start do filter once per request, /account
+2024-04-14 20:51:15.105 [INFO]  jwt_spring_security [http-nio-4000-exec-9] c.s.j.c.f.JwtTokenAuthenticationFilter             - end do filter: /account
+2024-04-14 20:51:15.106 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter            - Set SecurityContextHolder to anonymous SecurityContext
+2024-04-14 20:51:15.106 [DEBUG]  jwt_spring_security [http-nio-4000-exec-9] o.s.security.web.FilterChainProxy                  - Secured GET /account
+2024-04-14 22:08:28.742 [WARN]  jwt_spring_security [HikariCP housekeeper] com.zaxxer.hikari.pool.HikariPool                  - HikariCP - Retrograde clock change detected (housekeeper delta=29s831ms), soft-evicting connections from pool.
+2024-04-14 23:24:59.681 [WARN]  jwt_spring_security [HikariCP housekeeper] com.zaxxer.hikari.pool.HikariPool                  - HikariCP - Retrograde clock change detected (housekeeper delta=29s843ms), soft-evicting connections from pool.
