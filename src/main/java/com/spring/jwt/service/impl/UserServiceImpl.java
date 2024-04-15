@@ -32,11 +32,17 @@ public class UserServiceImpl implements UserService {
     public BaseResponseDTO registerAccount(UserDTO userDTO) {
         BaseResponseDTO response = new BaseResponseDTO();
 
-        validateAccount(userDTO);
-
-        User user = insertUser(userDTO);
-
         try {
+
+            validateAccount(userDTO);
+    
+            User user = new User();
+            user.setUsername(userDTO.getUsername());
+            user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
+            Set<Role> roles = new HashSet<>();
+            roles.add(roleRepository.findByName(userDTO.getRole()));
+            user.setRoles(roles);
+
             userRepository.save(user);
             response.setCode(String.valueOf(HttpStatus.OK.value()));
             response.setMessage("Create account successfully");
@@ -47,15 +53,7 @@ public class UserServiceImpl implements UserService {
         return response;
     }
 
-    private User insertUser(UserDTO userDTO) {
-        User user = new User();
-        user.setUsername(userDTO.getUsername());
-        user.setPassword(passwordEncoder.encode(userDTO.getPassword()));
-        Set<Role> roles = new HashSet<>();
-        roles.add(roleRepository.findByName(userDTO.getRole()));
-        user.setRoles(roles);
-        return user;
-    }
+
 
     private void validateAccount(UserDTO userDTO) {
         // validate null data
