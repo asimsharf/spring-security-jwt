@@ -67,6 +67,7 @@ public class AppConfig {
                 .csrf().disable()
                 .formLogin().disable()
                 .authorizeHttpRequests()
+                .requestMatchers("/role/**").permitAll()
                 .requestMatchers("/account/**").permitAll()
                 .requestMatchers("/guest/**").permitAll()
                 .requestMatchers("/admin/**").hasAuthority("ADMIN")
