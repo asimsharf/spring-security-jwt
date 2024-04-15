@@ -1,7 +1,7 @@
 package com.spring.jwt.controller;
 
 import com.spring.jwt.dto.UserDTO;
-import com.spring.jwt.service.UserService;
+import com.spring.jwt.service.Interfaces.UserInterface;
 import com.spring.jwt.utils.BaseResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class AccountController {
 
-    private final UserService userService;
+    private final UserInterface userInterface;
 
     @GetMapping("")
     public ResponseEntity<String> home() {
@@ -25,6 +25,6 @@ public class AccountController {
 
     @PostMapping("/register")
     public ResponseEntity<BaseResponseDTO> register(@RequestBody UserDTO userDTO) {
-        return ResponseEntity.ok(userService.registerAccount(userDTO));
+        return ResponseEntity.ok(userInterface.registerAccount(userDTO));
     }
 }

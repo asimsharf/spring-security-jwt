@@ -4,8 +4,8 @@ import com.spring.jwt.config.filter.CustomAuthenticationProvider;
 import com.spring.jwt.config.filter.JwtTokenAuthenticationFilter;
 import com.spring.jwt.config.filter.JwtUsernamePasswordAuthenticationFilter;
 import com.spring.jwt.exception.CustomAccessDeniedHandler;
-import com.spring.jwt.jwt.JwtConfig;
-import com.spring.jwt.jwt.JwtService;
+import com.spring.jwt.service.Interfaces.JwtInterface;
+import com.spring.jwt.service.JwtConfig;
 import com.spring.jwt.service.security.UserDetailsServiceCustom;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +32,7 @@ public class AppConfig {
     JwtConfig jwtConfig;
 
     @Autowired
-    private JwtService jwtService;
+    private JwtInterface jwtService;
 
     @Bean
     public JwtConfig jwtConfig() {

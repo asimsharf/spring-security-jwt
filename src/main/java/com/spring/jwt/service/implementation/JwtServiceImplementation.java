@@ -1,8 +1,8 @@
-package com.spring.jwt.jwt.impl;
+package com.spring.jwt.service.implementation;
 
 import com.spring.jwt.exception.BaseException;
-import com.spring.jwt.jwt.JwtConfig;
-import com.spring.jwt.jwt.JwtService;
+import com.spring.jwt.service.JwtConfig;
+import com.spring.jwt.service.Interfaces.JwtInterface;
 import com.spring.jwt.service.security.UserDetailsCustom;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class JwtServiceImpl implements JwtService {
+public class JwtServiceImplementation implements JwtInterface {
 
     private final JwtConfig jwtConfig;
 

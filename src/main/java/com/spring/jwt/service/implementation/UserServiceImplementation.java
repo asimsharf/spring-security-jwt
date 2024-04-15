@@ -1,4 +1,4 @@
-package com.spring.jwt.service.impl;
+package com.spring.jwt.service.implementation;
 
 import com.spring.jwt.dto.UserDTO;
 import com.spring.jwt.entity.Role;
@@ -6,7 +6,7 @@ import com.spring.jwt.entity.User;
 import com.spring.jwt.exception.BaseException;
 import com.spring.jwt.repository.RoleRepository;
 import com.spring.jwt.repository.UserRepository;
-import com.spring.jwt.service.UserService;
+import com.spring.jwt.service.Interfaces.UserInterface;
 import com.spring.jwt.utils.BaseResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -20,7 +20,7 @@ import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceImplementation implements UserInterface {
 
     private final UserRepository userRepository;
 

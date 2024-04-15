@@ -1,7 +1,7 @@
 package com.spring.jwt.config.filter;
 
-import com.spring.jwt.jwt.JwtConfig;
-import com.spring.jwt.jwt.JwtService;
+import com.spring.jwt.service.JwtConfig;
+import com.spring.jwt.service.Interfaces.JwtInterface;
 import com.spring.jwt.utils.BaseResponseDTO;
 import com.spring.jwt.utils.HelperUtils;
 import io.jsonwebtoken.Claims;
@@ -28,7 +28,7 @@ public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtConfig jwtConfig;
 
-    private final JwtService jwtService;
+    private final JwtInterface jwtInterface;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -43,8 +43,8 @@ public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
             accessToken = accessToken.substring((jwtConfig.getPrefix() + " ").length());
 
             try {
-                if (jwtService.isValidToken(accessToken)) {
-                    Claims claims = jwtService.extractClaims(accessToken);
+                if (jwtInterface.isValidToken(accessToken)) {
+                    Claims claims = jwtInterface.extractClaims(accessToken);
 
                     String username = claims.getSubject();
 

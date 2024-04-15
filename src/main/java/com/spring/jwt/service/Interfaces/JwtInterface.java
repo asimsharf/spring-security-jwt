@@ -1,11 +1,11 @@
-package com.spring.jwt.jwt;
+package com.spring.jwt.service.Interfaces;
 
 import com.spring.jwt.service.security.UserDetailsCustom;
 import io.jsonwebtoken.Claims;
 
 import java.security.Key;
 
-public interface JwtService {
+public interface JwtInterface {
 
     Claims extractClaims(String token);
 

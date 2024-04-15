@@ -2,8 +2,8 @@ package com.spring.jwt.config.filter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.spring.jwt.dto.LoginRequest;
-import com.spring.jwt.jwt.JwtConfig;
-import com.spring.jwt.jwt.JwtService;
+import com.spring.jwt.service.JwtConfig;
+import com.spring.jwt.service.Interfaces.JwtInterface;
 import com.spring.jwt.service.security.UserDetailsCustom;
 import com.spring.jwt.utils.BaseResponseDTO;
 import com.spring.jwt.utils.HelperUtils;
@@ -26,17 +26,17 @@ import java.util.Collections;
 @Slf4j
 public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticationProcessingFilter {
 
-    private final JwtService jwtService;
+    private final JwtInterface jwtInterface;
 
     private final ObjectMapper objectMapper;
 
     public JwtUsernamePasswordAuthenticationFilter(AuthenticationManager manager,
             JwtConfig jwtConfig,
-            JwtService jwtService) {
+            JwtInterface jwtInterface) {
         super(new AntPathRequestMatcher(jwtConfig.getUrl(), "POST"));
         setAuthenticationManager(manager);
         this.objectMapper = new ObjectMapper();
-        this.jwtService = jwtService;
+        this.jwtInterface = jwtInterface;
     }
 
     @Override
@@ -61,7 +61,7 @@ public class JwtUsernamePasswordAuthenticationFilter extends AbstractAuthenticat
             Authentication authentication) throws IOException, ServletException {
         UserDetailsCustom userDetailsCustom = (UserDetailsCustom) authentication.getPrincipal();
 
-        String accessToken = jwtService.generateToken(userDetailsCustom);
+        String accessToken = jwtInterface.generateToken(userDetailsCustom);
         String json = HelperUtils.JSON_WRITER.writeValueAsString(accessToken);
         response.setContentType("application/json; charset=UTF-8");
         response.getWriter().write(json);

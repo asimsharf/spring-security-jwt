@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.jwt.dto.RoleDTO;
-import com.spring.jwt.service.RoleService;
+import com.spring.jwt.service.Interfaces.RoleInterface;
 import com.spring.jwt.utils.BaseResponseDTO;
 
 import lombok.RequiredArgsConstructor;
@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RoleController {
 
-    private final RoleService roleService;
+    private final RoleInterface roleInterface;
     
     @GetMapping("")
     public ResponseEntity<String> home() {
@@ -27,7 +27,27 @@ public class RoleController {
 
     @PostMapping("/create")
     public ResponseEntity<BaseResponseDTO> create(@RequestBody RoleDTO roleDTO) {
-        return ResponseEntity.ok(roleService.createRole(roleDTO));
+        return ResponseEntity.ok(roleInterface.createRole(roleDTO));
+    }
+
+    @PostMapping("/delete")
+    public ResponseEntity<BaseResponseDTO> delete(@RequestBody RoleDTO roleDTO) {
+        return ResponseEntity.ok(roleInterface.deleteRole(roleDTO));
+    }
+
+    @PostMapping("/update")
+    public ResponseEntity<BaseResponseDTO> update(@RequestBody RoleDTO roleDTO) {
+        return ResponseEntity.ok(roleInterface.updateRole(roleDTO));
+    }
+
+    @PostMapping("/get")
+    public ResponseEntity<BaseResponseDTO> get(@RequestBody RoleDTO roleDTO) {
+        return ResponseEntity.ok(roleInterface.getRole(roleDTO));
+    }
+
+    @GetMapping("/getAll")
+    public ResponseEntity<BaseResponseDTO> getAll() {
+        return ResponseEntity.ok(roleInterface.getAllRole());
     }
 
 }

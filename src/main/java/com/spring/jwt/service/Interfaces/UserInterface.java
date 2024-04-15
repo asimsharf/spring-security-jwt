@@ -1,8 +1,8 @@
-package com.spring.jwt.service;
+package com.spring.jwt.service.Interfaces;
 
 import com.spring.jwt.dto.UserDTO;
 import com.spring.jwt.utils.BaseResponseDTO;
 
-public interface UserService {
+public interface UserInterface {
     BaseResponseDTO registerAccount(UserDTO userDTO);
 }
